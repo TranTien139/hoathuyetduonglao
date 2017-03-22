@@ -28,11 +28,53 @@
     <link rel="stylesheet" href="<?php  echo get_theme_file_uri(); ?>/assets/font-awesome-4.7.0/css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" href="<?php  echo get_theme_file_uri(); ?>/assets/css/flexslider.css" media="all" />
     <link rel="stylesheet" href="<?php  echo get_theme_file_uri(); ?>/assets/css/hoathuyet.css" media="all" />
-    <script src="<?php  echo get_theme_file_uri(); ?>/assets/js/jquery-2.1.4.min.js"></script>
-    <script src="<?php  echo get_theme_file_uri(); ?>/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script language="javascript" type="text/javascript" src="<?php  echo get_theme_file_uri(); ?>/assets/js/mouseWhell.js"></script>
-    <script src="<?php  echo get_theme_file_uri(); ?>/assets/js/jquery.flexslider-min.js"></script>
-    <script src="<?php  echo get_theme_file_uri(); ?>/assets/js/common.js"></script>
+    <link rel="stylesheet" href="<?php  echo get_theme_file_uri(); ?>/assets/css/style.css">
 </head>
 <body <?php body_class(); ?> >
+
+<div id="page" class="homepage">
+    <div id="banner_top_site">
+        <div class="container">
+            <div class="text-center"><img
+                        src="<?php echo get_theme_file_uri(); ?>/assets/images/graphics/img_960x120.jpg" alt=""/>
+            </div>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="logo_site">&nbsp;</a>
+        </div>
+    </div>
+
+    <header class="hidden-sm hidden-xs">
+        <div id="wrapper_header" class="width_common">
+            <div class="container">
+                <div class="relative">
+                    <div id="main_menu">
+                        <div class="">
+                            <?php wp_nav_menu(array('theme_location' => 'MainMenu', 'menu_class' => 'menu_web')); ?>
+                        </div>
+                    </div>
+                    <div class="block_search_header">
+                        <div class="relative">
+
+                            <form role="search" method="get" class="search-form"
+                                  action="<?php echo esc_url(home_url('/')); ?>">
+                                <input type="text" placeholder="Tìm Kiếm ..."
+                                       value="<?php echo get_search_query(); ?>" name="s">
+                                <button><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="menu_tablet" class="width_common hidden-lg hidden-md"><a href="#" class="logo"><img
+                    src="<?php echo get_theme_file_uri(); ?>/assets/images/graphics/logo_site.png" alt=""/></a>
+        <div class="block_hamber_menu">
+            <div class="hamber"><span>&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span></div>
+            <div class="block_menu">
+                <div class="width_common">
+                    <?php wp_nav_menu(array('theme_location' => 'MainMenu', 'menu_class' => 'menu_web')); ?>
+                </div>
+            </div>
+        </div>
+    </div>
 

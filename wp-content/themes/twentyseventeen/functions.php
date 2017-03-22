@@ -13,17 +13,17 @@
  * Twenty Seventeen only works in WordPress 4.7 or later.
  */
 
-CONST KIENTHUCHANLAM = 17;
-CONST TINXEMNHIEU = 17;
-CONST SUCKHOELAMDEP = 17;
+CONST KIENTHUCHANLAM = 3;
+CONST TINXEMNHIEU = 2;
+CONST SUCKHOELAMDEP = 4;
 
-CONST KIENTHUCBENHHOC = 17;
-CONST TUANHOANNAO = 17;
-CONST TUANHOANNGOAIVI = 17;
-CONST SOVUADONGMACH = 17;
+CONST KIENTHUCBENHHOC = 5;
+CONST TUANHOANNAO = 6;
+CONST TUANHOANNGOAIVI = 7;
+CONST SOVUADONGMACH = 8;
 
-CONST KHOVIDEO = 17;
-CONST SLIDERIGHT = 17;
+CONST KHOVIDEO = 9;
+CONST SLIDERIGHT = 10;
 
 
 if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
@@ -550,25 +550,26 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
+add_filter('widget_text', 'do_shortcode');
 
-//function load_style_and_script1() {
-//    wp_enqueue_script('project', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'));
-//}
-//add_action('wp_enqueue_scripts', 'load_style_and_script1');
-//
-//function load_style_and_script2() {
-//    wp_enqueue_script('hocwp2', get_template_directory_uri() . '/js/custonjs.js', array('jquery'));
-//}
-//add_action('wp_enqueue_scripts', 'load_style_and_script2');
-//
-//function thachpham_styles() {
-//    wp_register_style( 'main-style', get_template_directory_uri() . '/css/bootstrap.css', 'all' );
-//    wp_enqueue_style( 'main-style' );
-//}
-//add_action( 'wp_enqueue_scripts', 'thachpham_styles' );
-//
-//function thachpham_styles1() {
-//    wp_register_style( 'main-style1', get_template_directory_uri() . '/css/style.css', 'all' );
-//    wp_enqueue_style( 'main-style1' );
-//}
-//add_action( 'wp_enqueue_scripts', 'thachpham_styles1' );
+function get_category_parents_custom( $id, $link = false, $separator = '/', $nicename = false, $visited = array()) {
+	        $chain = '';
+	        $parent = get_term( $id, 'category' );
+        if ( is_wp_error( $parent ) )
+ 	                return $parent;
+
+	        if ( $nicename )
+     	                $name = $parent->slug;
+	        else
+	                $name = $parent->name;
+
+        if ( $parent->parent && ( $parent->parent != $parent->term_id ) && !in_array( $parent->parent, $visited ) ) {
+      	                $visited[] = $parent->parent;
+                $chain .= get_category_parents_custom( $parent->parent, $link, $separator, $nicename, $visited );
+        }
+
+	        if ( $link )
+                      $chain = esc_url( get_category_link( $parent->term_id ) );
+
+	        return $chain;
+	}
