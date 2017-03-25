@@ -72,7 +72,7 @@ get_header(); ?>
                 $stt = 0; ?>
                 <div id="box_tinxemnhieu" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-tn-12 space_bottom_10">
                     <?php if(count($postslist)>0){  ?> <div class="title_box"><h3><a
-                                    href="<?php echo esc_url($category_link); ?> "><?php echo $category->name ?></a>
+                                    href="<?php echo esc_url($category_link); ?>"><?php echo $category->name ?></a>
                         </h3></div> <?php } ?>
                     <div class="content_box">
                         <div class="block_news width_common">
@@ -157,7 +157,7 @@ get_header(); ?>
                                     <a class="thunb_image thumb_5x3" href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
                                 </div>
                                 <h2 class="title_box_news">
-                                    <a href="<?php the_permalink() ?>"><?php the_title() ?>/a>
+                                    <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
                                 </h2>
                                 <h4 class="lead_box_news"><?php the_excerpt(); ?></h4>
                             </div>
@@ -179,7 +179,7 @@ get_header(); ?>
                     <?php global $post;
                     $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => KIENTHUCBENHHOC);
                     $category = get_term(KIENTHUCBENHHOC, 'category');
-                    $link_cate = get_category_parents_custom( TUANHOANNAO, true, '' ); ?>
+                    $link_cate = get_category_parents_custom( KIENTHUCBENHHOC, true, '' ); ?>
                     <div id="box_kienthuc_benhhoc" class="box_common_site">
                         <div class="title_box_common">
                             <h3 class="wap_title_box relative">
@@ -192,7 +192,6 @@ get_header(); ?>
                         <?php global $post;
                         $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => TUANHOANNAO);
                         $category = get_term(TUANHOANNAO, 'category');
-
                         $stt = 0;  $link_cate = get_category_parents_custom( TUANHOANNAO, true, '' ); ?>
                         <div class="item_box_kienthuc">
                             <?php if(count($postslist)>0){ ?>
@@ -210,7 +209,7 @@ get_header(); ?>
                                             <a class="thunb_image thumb_5x3" href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
                                         </div>
                                         <h2 class="title_box_news">
-                                            <a href="<?php the_permalink() ?>"><?php the_title() ?>/a>
+                                            <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
                                         </h2>
                                         <h4 class="lead_box_news"><?php the_excerpt(); ?></h4>
                                     </div>
@@ -252,7 +251,7 @@ get_header(); ?>
                                             <a class="thunb_image thumb_5x3" href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
                                         </div>
                                         <h2 class="title_box_news">
-                                            <a href="<?php the_permalink() ?>"><?php the_title() ?>/a>
+                                            <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
                                         </h2>
                                         <h4 class="lead_box_news"><?php the_excerpt(); ?></h4>
                                     </div>
@@ -294,7 +293,7 @@ get_header(); ?>
                                             <a class="thunb_image thumb_5x3" href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
                                         </div>
                                         <h2 class="title_box_news">
-                                            <a href="<?php the_permalink() ?>"><?php the_title() ?>/a>
+                                            <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
                                         </h2>
                                         <h4 class="lead_box_news"><?php the_excerpt(); ?></h4>
                                     </div>

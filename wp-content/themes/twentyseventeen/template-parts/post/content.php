@@ -63,8 +63,8 @@
                             <?php $tags = wp_get_post_tags(get_the_ID());
                            ?>
                             <span>Tag</span> <?php if ($tags) {
-                                foreach($tags as $tag) { ?>
-                                    <a href="<?php echo get_site_url().'/tag/'.$tag->slug; ?>"><?php echo $tag->name ?></a>
+                                foreach($tags as $tag) { $tag_link = get_tag_link( $tag->term_id ); ?>
+                                    <a href="<?php echo $tag_link; ?>"><?php echo $tag->name ?></a>
                             <?php     }
                             } ?>
                         </div>

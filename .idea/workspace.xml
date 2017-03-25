@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b78b34aa-2b19-46b1-8697-dee126f1f528" name="Default" comment="" />
+    <list default="true" id="b78b34aa-2b19-46b1-8697-dee126f1f528" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/page/content-page.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/page/content-page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +23,8 @@
       <file leaf-file-name="archive.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/archive.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="26" selection-end-column="15" />
+            <state relative-caret-position="187">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -58,28 +63,82 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="191" column="35" lean-forward="false" selection-start-line="191" selection-start-column="35" selection-end-line="191" selection-end-column="35" />
+            <state relative-caret-position="289">
+              <caret line="184" column="63" lean-forward="true" selection-start-line="184" selection-start-column="63" selection-end-line="184" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wp-config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+              <folding>
+                <marker date="1490426772413" expanded="true" signature="1120:1219" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="1161:1219" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="1543:2231" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="1589:2208" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="1651:2181" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="1710:1881" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="1937:2068" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="2710:4163" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="2987:4140" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="3036:4057" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="3084:4026" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="3257:3849" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="3330:3807" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="3408:3619" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="4240:5238" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="4301:5214" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="4533:5063" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="4592:4763" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="4819:4950" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="5345:5404" ph="..." />
+                <marker date="1490426772413" expanded="true" signature="5503:5538" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template_video.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_video.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="content-page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/page/content-page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="202" column="14" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="202" selection-end-column="14" />
+              <folding>
+                <element signature="e#6#216#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="66" column="76" lean-forward="false" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
+            <state relative-caret-position="799">
+              <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -109,7 +168,6 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/archive-question-filter.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-single-answer.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/archive-question.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-question.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/css/hoathuyet.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/css/style.css" />
@@ -117,15 +175,16 @@
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/search.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/sidebar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/404.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_contact.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/page/content-page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_faq.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_video.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/archive.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/page/content-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php" />
       </list>
     </option>
   </component>
@@ -279,6 +338,36 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoathuyetduonglao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoathuyetduonglao" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twentyseventeen" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template-parts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -370,12 +459,12 @@
       <workItem from="1490203322443" duration="97000" />
       <workItem from="1490275510910" duration="15290000" />
       <workItem from="1490361887722" duration="11142000" />
-      <workItem from="1490408729896" duration="1708000" />
+      <workItem from="1490408729896" duration="14838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42189000" />
+    <option name="totallyTimeSpent" value="55319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -419,13 +508,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyfifteen/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/elipsis.js" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/jquery.ellipsis.js" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/common.js">
@@ -665,6 +747,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10151">
           <caret line="1253" column="0" lean-forward="false" selection-start-line="1253" selection-start-column="0" selection-end-line="1253" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -712,13 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/page/content-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="202" column="44" lean-forward="false" selection-start-line="202" selection-start-column="44" selection-end-line="202" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_faq.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
@@ -727,55 +803,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_video.php">
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4014">
-          <caret line="237" column="0" lean-forward="true" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/page/content-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="202" column="14" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="202" selection-end-column="14" />
           <folding>
-            <element signature="e#2585#2591#0#HTML" expanded="false" />
-            <element signature="e#3468#3474#0#HTML" expanded="false" />
-            <element signature="e#4351#4357#0#HTML" expanded="false" />
-            <element signature="e#5234#5240#0#HTML" expanded="false" />
-            <element signature="e#7772#7778#0#HTML" expanded="false" />
-            <element signature="e#7859#7865#0#HTML" expanded="false" />
-            <element signature="e#8535#8541#0#HTML" expanded="false" />
-            <element signature="e#8622#8628#0#HTML" expanded="false" />
-            <element signature="e#9298#9304#0#HTML" expanded="false" />
-            <element signature="e#9385#9391#0#HTML" expanded="false" />
-            <element signature="e#10061#10067#0#HTML" expanded="false" />
-            <element signature="e#10148#10154#0#HTML" expanded="false" />
-            <element signature="e#10824#10830#0#HTML" expanded="false" />
-            <element signature="e#10911#10917#0#HTML" expanded="false" />
-            <element signature="e#11587#11593#0#HTML" expanded="false" />
-            <element signature="e#11674#11680#0#HTML" expanded="false" />
-            <element signature="e#12350#12356#0#HTML" expanded="false" />
-            <element signature="e#12437#12443#0#HTML" expanded="false" />
-            <element signature="e#13113#13119#0#HTML" expanded="false" />
-            <element signature="e#13200#13206#0#HTML" expanded="false" />
-            <element signature="e#13876#13882#0#HTML" expanded="false" />
-            <element signature="e#13963#13969#0#HTML" expanded="false" />
-            <element signature="e#14639#14645#0#HTML" expanded="false" />
-            <element signature="e#14726#14732#0#HTML" expanded="false" />
-            <element signature="e#15402#15408#0#HTML" expanded="false" />
-            <element signature="e#15489#15495#0#HTML" expanded="false" />
-            <element signature="e#16165#16171#0#HTML" expanded="false" />
-            <element signature="e#16252#16258#0#HTML" expanded="false" />
+            <element signature="e#6#216#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/archive.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="26" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -798,25 +847,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="191" column="35" lean-forward="false" selection-start-line="191" selection-start-column="35" selection-end-line="191" selection-end-column="35" />
+        <state relative-caret-position="289">
+          <caret line="184" column="63" lean-forward="true" selection-start-line="184" selection-start-column="63" selection-end-line="184" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="66" column="76" lean-forward="false" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
+        <state relative-caret-position="799">
+          <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+          <folding>
+            <marker date="1490426772413" expanded="true" signature="1120:1219" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="1161:1219" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="1543:2231" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="1589:2208" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="1651:2181" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="1710:1881" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="1937:2068" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="2710:4163" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="2987:4140" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="3036:4057" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="3084:4026" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="3257:3849" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="3330:3807" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="3408:3619" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="4240:5238" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="4301:5214" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="4533:5063" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="4592:4763" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="4819:4950" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="5345:5404" ph="..." />
+            <marker date="1490426772413" expanded="true" signature="5503:5538" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -18,6 +18,11 @@
                         <div class="breadcrumb">
                             <a href="<?php echo esc_url(home_url('/')); ?>">Trang chủ</a> <i class="fa fa-caret-right"></i> <a class="active_breadcrumb"><?php the_title() ?></a>
                         </div>
+                        <?php global $post;
+                        $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => get_the_ID());
+                        $category = get_term(get_the_ID(), 'category');
+                        $category_link = get_category_link(get_the_ID()); $postslist_cate = get_posts($args); ?>
+
                         <div id="box_hot_folder" class="space_bottom_20">
                             <div class="content_box">
                                 <div class="block_news width_common">
@@ -31,47 +36,33 @@
                                 </div>
                             </div>
                         </div>
+
+                        <?php global $post;
+                        $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => TINXEMNHIEU);
+                        $category = get_term(TINXEMNHIEU, 'category');
+                        $category_link = get_category_link(TINXEMNHIEU); $postslist = get_posts($args); ?>
                         <div id="box_tinxemnhieu_folder" class="width_common space_bottom_20">
-                            <div class="title_box"><h3><a href="#">Tin xem nhiều</a></h3></div>
+                            <?php if(count($postslist)>0){  ?>
+                            <div class="title_box"><h3><a href="<?php echo esc_url($category_link); ?>"><?php echo $category->name ?></a></h3></div>
+                            <?php } ?>
                             <div class="content_box">
                                 <div class="flexslider">
                                     <ul class="slides">
+                                        <?php foreach ($postslist as $post) :
+                                        setup_postdata($post); ?>
                                         <li>
                                             <div class="item_news_xemnhieu">
                                                 <div class="thumb_news relative">
-                                                    <div class="thunb_image thumb_5x3"><a href="#"><img src="images/graphics/img_370x222.jpg" alt="" /></a></div>
+                                                    <div class="thunb_image thumb_5x3"><a href="<?php  the_permalink() ?>"><?php the_post_thumbnail() ?></a></div>
 
                                                 </div>
-                                                <h2 class="title_news_xemnhieu"><a href="#">Phòng chống loãng xương thế nào?</a></h2>
+                                                <h2 class="title_news_xemnhieu"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="item_news_xemnhieu">
-                                                <div class="thumb_news relative">
-                                                    <div class="thunb_image thumb_5x3"><a href="#"><img src="images/graphics/img_370x222.jpg" alt="" /></a></div>
+                                        <?php
+                                        endforeach;
+                                        wp_reset_postdata(); ?>
 
-                                                </div>
-                                                <h2 class="title_news_xemnhieu"><a href="#">Phòng chống loãng xương thế nào?</a></h2>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item_news_xemnhieu">
-                                                <div class="thumb_news relative">
-                                                    <div class="thunb_image thumb_5x3"><a href="#"><img src="images/graphics/img_370x222.jpg" alt="" /></a></div>
-
-                                                </div>
-                                                <h2 class="title_news_xemnhieu"><a href="#">Phòng chống loãng xương thế nào?</a></h2>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item_news_xemnhieu">
-                                                <div class="thumb_news relative">
-                                                    <div class="thunb_image thumb_5x3"><a href="#"><img src="images/graphics/img_370x222.jpg" alt="" /></a></div>
-
-                                                </div>
-                                                <h2 class="title_news_xemnhieu"><a href="#">Phòng chống loãng xương thế nào?</a></h2>
-                                            </div>
-                                        </li>
                                     </ul>
                                 </div>
                                 <div class="clear-fixed"></div>
@@ -206,7 +197,7 @@
                 </div>
 
                 <div class="block_banner_960x90 width_common text-center space_bottom_20">
-                    <a href="#"><img src="images/graphics/img_960x90.jpg" alt="" /></a>
+                    <?php dynamic_sidebar('sidebar-2'); ?>
                 </div>
             </div>
         </div>
