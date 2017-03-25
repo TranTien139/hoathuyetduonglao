@@ -1,38 +1,57 @@
 <?php
-/**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
-
-get_header(); ?>
-
-    <div id="wrapper_container">
-    <div class="container">
-<?php
-echo get_search_query();
-if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
-        get_template_part( 'template-parts/post/content', 'excerpt' );
-
-    endwhile;
-
-    the_posts_pagination( array(
-        'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-        'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
-        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
-    ) );
-else : ?>
-
-    <p><?php _e( 'đéo có kết quả nào được tìm thấy', 'twentyseventeen' ); ?></p>
-    <?php
-endif;
+get_header();
+global $wp_query;
 ?>
+
+<div id="wrapper_container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 col-tn-12">
+                <div class="breadcrumb">
+                    <a href="<?php echo esc_url(home_url('/')); ?>">Trang chủ</a> <i class="fa fa-caret-right"></i> <a class="active_breadcrumb">Tìm kiếm</a>
+                </div>
+
+                <div id="box_search_page">
+                    <?php get_search_form() ?>
+                    <div class="width_common space_bottom_20"><strong><?php echo $wp_query->found_posts; ?></strong> kết quả cho từ khóa <strong class="txt_site"><?php the_search_query(); ?></strong></div>
+                </div>
+
+                <div class="list_news_folder space_bottom_20 width_common">
+                    <div class="list_sub_news width_common">
+                        <?php if ( have_posts() ) { ?>
+                        <?php while ( have_posts() ) { the_post(); ?>
+                        <div class="item_list_news_folder">
+                            <div class="block_thumb_news">
+                                <a class="thunb_image thumb_5x3" href="<?php echo get_permalink(); ?>"><?php  the_post_thumbnail('medium') ?></a>
+                            </div>
+                            <h2 class="title_box_news">
+                                <a href="<?php echo get_permalink(); ?>"> <?php the_title();  ?></a>
+                            </h2>
+                            <h4 class="lead_box_news"><?php echo substr(get_the_excerpt(), 0,200); ?></h4>
+                        </div>
+                            <?php } ?>
+                            <?php paginate_links(); ?>
+                        <?php } ?>
+                    </div>
+
+
+
+
+                    <div class="block_xemthem text-right">
+                        <a href="#" class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-tn-12 space_bottom_10">
+                <?php get_sidebar() ?>
+
+            </div>
+        </div>
+
+        <div class="block_banner_960x90 width_common text-center space_bottom_20">
+            <?php dynamic_sidebar('sidebar-2'); ?>
+        </div>
     </div>
-    </div>
-<?php get_footer();
+</div>
+
+<?php get_footer(); ?>

@@ -25,6 +25,12 @@ CONST SOVUADONGMACH = 8;
 CONST KHOVIDEO = 9;
 CONST SLIDERIGHT = 10;
 
+CONST CATE_SIDEBAR1 = 3;
+CONST CATE_SIDEBAR2 = 3;
+CONST CATE_SIDEBAR3 = 3;
+CONST CATE_SIDEBAR4 = 3;
+CONST CATE_SIDEBAR4 = 5;
+
 
 if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
@@ -336,25 +342,15 @@ function twentyseventeen_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
-	register_sidebar( array(
-		'name'          => __( 'Footer 1', 'twentyseventeen' ),
-		'id'            => 'sidebar-2',
-		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'Footer 2', 'twentyseventeen' ),
-		'id'            => 'sidebar-3',
-		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+    register_sidebar( array(
+        'name'          => __( 'banner foooter 960x90', 'twentyseventeen' ),
+        'id'            => 'sidebar-2',
+        'description'   => __( 'banner ảnh dưới footer', 'twentyseventeen' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
 }
 add_action( 'widgets_init', 'twentyseventeen_widgets_init' );
 
@@ -370,13 +366,6 @@ function twentyseventeen_excerpt_more( $link ) {
 	if ( is_admin() ) {
 		return $link;
 	}
-
-	$link = sprintf( '<p class="link-more"><a href="%1$s" class="more-link">%2$s</a></p>',
-		esc_url( get_permalink( get_the_ID() ) ),
-		/* translators: %s: Name of current post */
-		sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ), get_the_title( get_the_ID() ) )
-	);
-	return ' &hellip; ' . $link;
 }
 add_filter( 'excerpt_more', 'twentyseventeen_excerpt_more' );
 

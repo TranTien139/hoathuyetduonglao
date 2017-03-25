@@ -9,12 +9,14 @@
  */
 ?>
 
-<?php $unique_id = esc_attr( uniqid( 'search-form-' ) ); ?>
-
-<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<label for="<?php echo $unique_id; ?>">
-		<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label', 'twentyseventeen' ); ?></span>
-	</label>
-	<input type="search" id="<?php echo $unique_id; ?>" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'twentyseventeen' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-	<button type="submit" class="search-submit"><?php echo twentyseventeen_get_svg( array( 'icon' => 'search' ) ); ?><span class="screen-reader-text"><?php echo _x( 'Search', 'submit button', 'twentyseventeen' ); ?></span></button>
-</form>
+<div class="col-lg-8 col-lg-offset-2">
+    <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <div class="block_search_page">
+        <div class="relative">
+            <input type="text" placeholder="Nhập từ khóa tìm kiếm..."  name="s" >
+            <input type="hidden" value="post" name="post_type" id="post_type" />
+            <button type="submit" ><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    </form>
+</div>

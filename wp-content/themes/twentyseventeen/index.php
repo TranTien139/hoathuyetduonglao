@@ -21,7 +21,7 @@ get_header(); ?>
         <div class="container">
             <div class="row">
                 <div id="box_moinhat" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-tn-12 space_bottom_10">
-                    <div class="title_box"><h3><a href="javascript:void(0)">Bài viết mới nhất</a></h3></div>
+                    <div class="title_box"><h3><a href="<?php echo get_site_url() ?>/category/bai-viet-moi-nhat">Bài viết mới nhất</a></h3></div>
                     <div class="content_box">
                         <div class="block_news width_common">
                             <?php $the_query = new WP_Query('posts_per_page=3');
@@ -37,7 +37,7 @@ get_header(); ?>
                             <h2 class="title_box_news">
                                 <a href="<?php echo get_permalink() ?>" class="four-lines"><?php the_title() ?></a>
                             </h2>
-                            <h4 class="lead_box_news four-lines"><?php the_excerpt() ?></h4>
+                            <h4 class="lead_box_news"><?php the_excerpt() ?></h4>
                         </div>
 
                         <div class="list_sub_news width_common">
@@ -60,7 +60,7 @@ get_header(); ?>
                         </div>
 
                         <div class="block_xemthem text-center">
-                            <a href="javascript:void(0)" class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
+                            <a href="<?php echo get_site_url() ?>/category/bai-viet-moi-nhat" class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ get_header(); ?>
                             <h2 class="title_box_news">
                                 <a href="<?php echo get_permalink() ?>" class="four-lines"><?php the_title() ?></a>
                             </h2>
-                            <h4 class="lead_box_news four-lines"><?php the_excerpt() ?></h4>
+                            <h4 class="lead_box_news"><?php the_excerpt() ?></h4>
                         </div>
 
                         <div class="list_sub_news width_common">
@@ -340,8 +340,7 @@ get_header(); ?>
                                 setup_postdata($post);
                                 if ($stt == 0){ ?>
                                     <div class="block_thumb_news">
-                                        <a class="thunb_image thumb_5x3" href="<?php the_permalink() ?>"><img alt=""
-                                                                                                              src="<?php the_post_thumbnail() ?>"></a>
+                                        <a class="thunb_image thumb_5x3" href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
                                     </div>
                                     <h2 class="title_box_news">
                                         <a href="<?php the_permalink() ?>"><?php the_title() ?>/a>
@@ -374,26 +373,9 @@ get_header(); ?>
                             <div class="content_box_common width_common">
                                 <div class="list_tuvan width_common">
                                     <div class="item_tuvan width_common">
-<!--                                        <div class="user_tuvan"><i class="fa fa-question-circle-o"-->
-<!--                                                                   aria-hidden="true"></i> <strong class="txt_666">Hoàng-->
-<!--                                                Phương</strong> - <span class="txt_aaa">viêm khớp</span></div>-->
-<!--                                        <div class="block_question">-->
-<!--                                            Mẹ tôi năm nay 47t, gần đây mẹ hay bị ra mồ hôi và người nóng bừng lên làm-->
-<!--                                            mẹ mệt mỏi và khó ngủ. Em có thể mua Amanda cho mẹ uống lâu dài đc không?-->
-<!--                                        </div>-->
-<!--                                        <div class="block_answear">-->
-<!--                                            <i class="fa fa-caret-up"></i>-->
-<!--                                            <i>Mẹ tôi năm nay 47t, gần đây mẹ hay bị ra mồ hôi và người nóng bừng lên-->
-<!--                                                làm mẹ mệt mỏi và khó ngủ...</i> <a href="#" class="txt_999">Xem đầy-->
-<!--                                                đủ</a>-->
-<!--                                            <div class="author_answear">TS.PGS Nguyễn Văn A</div>-->
-<!--                                        </div>-->
                                         <?php echo do_shortcode('[dwqa-list-questions]'); ?>
                                     </div>
                                 </div>
-                                <div class="block_txt_datcauhoi text-center"><a href="#"
-                                                                                class="text-uppercase txt_16 txt_site"><b>đặt
-                                            câu hỏi</b></a></div>
                             </div>
                         </div>
 
@@ -442,8 +424,7 @@ get_header(); ?>
                 </div>
 
                 <div class="block_banner_960x90 width_common text-center space_bottom_20">
-                    <a href="javascript:void(0)"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/graphics/img_960x90.jpg"
-                                     alt=""/></a>
+                    <?php dynamic_sidebar('sidebar-2'); ?>
                 </div>
             </div>
         </div>

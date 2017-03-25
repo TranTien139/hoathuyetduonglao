@@ -7,36 +7,28 @@
  */
 
 ?>
-<div class="<?php echo dwqa_post_class(); ?>">
-	<div class="dwqa-question-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-	<div class="dwqa-question-meta">
-		<?php dwqa_question_print_status() ?>
-		<?php
-			global $post;
-			$user_id = get_post_field( 'post_author', get_the_ID() ) ? get_post_field( 'post_author', get_the_ID() ) : false;
-			$time = human_time_diff( get_post_time( 'U', true ) );
-			$text = __( 'asked', 'dwqa' );
-			$latest_answer = dwqa_get_latest_answer();
-			if ( $latest_answer ) {
-				$time = human_time_diff( strtotime( $latest_answer->post_date_gmt ) );
-				$text = __( 'answered', 'dwqa' );
-			}
-		?>
-		<?php printf( __( '<span><a href="%s">%s%s</a> %s %s ago</span>', 'dwqa' ), dwqa_get_author_link( $user_id ), get_avatar( $user_id, 48 ), get_the_author(), $text, $time ) ?>
-		<?php echo get_the_term_list( get_the_ID(), 'dwqa-question_category', '<span class="dwqa-question-category">' . __( '&nbsp;&bull;&nbsp;', 'dwqa' ), ', ', '</span>' ); ?>
-	</div>
-	<div class="dwqa-question-stats">
-		<span class="dwqa-views-count">
-			<?php $views_count = dwqa_question_views_count() ?>
-			<?php printf( __( '<strong>%1$s</strong> views', 'dwqa' ), $views_count ); ?>
-		</span>
-		<span class="dwqa-answers-count">
-			<?php $answers_count = dwqa_question_answers_count(); ?>
-			<?php printf( __( '<strong>%1$s</strong> answers', 'dwqa' ), $answers_count ); ?>
-		</span>
-		<span class="dwqa-votes-count">
-			<?php $vote_count = dwqa_vote_count() ?>
-			<?php printf( __( '<strong>%1$s</strong> votes', 'dwqa' ), $vote_count ); ?>
-		</span>
-	</div>
+
+<div class="item_tuvan width_common">
+    <div class="user_tuvan"><i class="fa fa-question-circle-o" aria-hidden="true"></i> <strong class="txt_666"><?php echo get_the_author(); ?></strong> - <?php echo get_the_term_list( get_the_ID(), 'dwqa-question_category',__( '', 'dwqa' ), ', ', '' ); ?></div>
+    <div class="block_question">
+        <?php the_title(); ?>
+        <?php
+        global $post;
+        $user_id = get_post_field( 'post_author', get_the_ID() ) ? get_post_field( 'post_author', get_the_ID() ) : false;
+        $args = array(
+            'number' => '1',
+            'post_id' => get_the_ID()
+        );
+        $comments = get_comments($args);
+        ?>
+    </div>
+    <?php if($comments[0]->comment_content != ''){ ?>
+    <div class="block_answear">
+        <i class="fa fa-caret-up"></i>
+        <i><?php echo $comments[0]->comment_content; ?></i> <a href="#" class="txt_999">Xem đầy đủ</a>
+        <div class="author_answear" style="text-transform: uppercase;"><?php echo $comments[0]->comment_author; ?></div>
+    </div>
+    <?php } ?>
 </div>
+
+

@@ -13,7 +13,7 @@
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js no-svg">
+<html lang="vi" class="no-js no-svg">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
 
 <?php wp_head(); ?>
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans300,400,700,800&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="<?php  echo get_theme_file_uri(); ?>/assets/bootstrap/css/bootstrap.min.css" media="all" />
@@ -57,7 +57,8 @@
                             <form role="search" method="get" class="search-form"
                                   action="<?php echo esc_url(home_url('/')); ?>">
                                 <input type="text" placeholder="Tìm Kiếm ..."
-                                       value="<?php echo get_search_query(); ?>" name="s">
+                                        name="s">
+                                <input type="hidden" value="post" name="post_type" id="post_type" />
                                 <button><i class="fa fa-search"></i></button>
                             </form>
                         </div>
