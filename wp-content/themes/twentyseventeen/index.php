@@ -264,7 +264,7 @@ get_header(); ?>
                                         <a class="thunb_image thumb_5x3" href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
                                     </div>
                                     <h2 class="title_box_news">
-                                        <a href="<?php the_permalink() ?>"><?php the_title() ?>/a>
+                                        <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
                                     </h2>
                                     <h4 class="lead_box_news"><?php the_excerpt(); ?></h4>
                                 </div>
@@ -288,7 +288,8 @@ get_header(); ?>
                                 <h3 class="wap_title_box relative">
                                     <img src="<?php echo get_theme_file_uri(); ?>/assets/images/icon/ico_tuvan.png"
                                          class="icon_title">
-                                    <a class="text_title_box" href="<?php echo esc_url(home_url('/tu-van-chia-se')) ?>">tư vấn - chia sẻ</a>
+                                    <a class="text_title_box"
+                                       href="<?php echo esc_url(home_url('/tu-van-chia-se')) ?>">tư vấn - chia sẻ</a>
                                 </h3>
                             </div>
                             <div class="content_box_common width_common">
