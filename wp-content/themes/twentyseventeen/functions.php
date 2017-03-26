@@ -402,6 +402,16 @@ function twentyseventeen_widgets_init() {
         'after_title'   => '</h2>',
     ) );
 
+    register_sidebar( array(
+        'name'          => __( 'Thanh chuyên mục kho video', 'twentyseventeen' ),
+        'id'            => 'bar_khovideo',
+        'description'   => __( 'Thanh chuyên mục kho video', 'twentyseventeen' ),
+        'before_widget' => '<section class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
 }
 add_action( 'widgets_init', 'twentyseventeen_widgets_init' );
 
@@ -613,3 +623,50 @@ function get_category_parents_custom( $id, $link = false, $separator = '/', $nic
 
 	        return $chain;
 	}
+
+
+//	set bài viêt nổi bật
+
+function sm_custom_meta() {
+    add_meta_box( 'sm_meta', __( 'Featured Posts', 'sm-textdomain' ), 'sm_meta_callback', 'post' );
+}
+function sm_meta_callback( $post ) {
+    $featured = get_post_meta( $post->ID );
+    ?>
+
+    <p>
+    <div class="sm-row-content">
+        <label for="meta-checkbox">
+            <input type="checkbox" name="meta-checkbox" id="meta-checkbox" value="yes" <?php if ( isset ( $featured['meta-checkbox'] ) ) checked( $featured['meta-checkbox'][0], 'yes' ); ?> />
+            <?php _e( 'Bài viết nổi bật', 'sm-textdomain' )?>
+        </label>
+
+    </div>
+    </p>
+
+    <?php
+}
+add_action( 'add_meta_boxes', 'sm_custom_meta' );
+
+
+function sm_meta_save( $post_id ) {
+
+    // Checks save status
+    $is_autosave = wp_is_post_autosave( $post_id );
+    $is_revision = wp_is_post_revision( $post_id );
+    $is_valid_nonce = ( isset( $_POST[ 'sm_nonce' ] ) && wp_verify_nonce( $_POST[ 'sm_nonce' ], basename( __FILE__ ) ) ) ? 'true' : 'false';
+
+    // Exits script depending on save status
+    if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
+        return;
+    }
+
+    // Checks for input and saves
+    if( isset( $_POST[ 'meta-checkbox' ] ) ) {
+        update_post_meta( $post_id, 'meta-checkbox', 'yes' );
+    } else {
+        update_post_meta( $post_id, 'meta-checkbox', '' );
+    }
+
+}
+add_action( 'save_post', 'sm_meta_save' );

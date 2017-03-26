@@ -66,7 +66,7 @@ get_header(); ?>
                 </div>
 
                 <?php global $post;
-                $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => TINXEMNHIEU);
+                $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => TINXEMNHIEU);
                 $category = get_term(TINXEMNHIEU, 'category');
                 $category_link = get_category_link(TINXEMNHIEU); $postslist = get_posts($args);
                 $stt = 0; ?>
@@ -116,7 +116,7 @@ get_header(); ?>
                 <div id="box_slider_banner" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-tn-12 space_bottom_10">
                     <div class="content_box_video width_common">
                         <?php global $post;
-                        $args = array('posts_per_page' => 4, 'order' => 'ASC', 'orderby' => 'title', 'category' => SLIDERIGHT); ?>
+                        $args = array('posts_per_page' => 4, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => SLIDERIGHT); ?>
                         <div class="flexslider">
                             <ul class="slides">
                                 <?php $postslist = get_posts($args); ?>
@@ -132,7 +132,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-tn-12">
                     <?php global $post;
-                    $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => KIENTHUCHANLAM);
+                    $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => KIENTHUCHANLAM);
                     $category = get_term(KIENTHUCHANLAM, 'category');
                     $category_link = get_category_link(KIENTHUCHANLAM); $postslist = get_posts($args);
                     $stt = 0; ?>
@@ -177,7 +177,7 @@ get_header(); ?>
                     </div>
 
                     <?php global $post;
-                    $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => KIENTHUCBENHHOC);
+                    $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => KIENTHUCBENHHOC);
                     $category = get_term(KIENTHUCBENHHOC, 'category');
                     $link_cate = get_category_parents_custom( KIENTHUCBENHHOC, true, '' ); ?>
                     <div id="box_kienthuc_benhhoc" class="box_common_site">
@@ -190,7 +190,7 @@ get_header(); ?>
                             </h3>
                         </div>
                         <?php global $post;
-                        $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => TUANHOANNAO);
+                        $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => TUANHOANNAO);
                         $category = get_term(TUANHOANNAO, 'category');
                         $stt = 0;  $link_cate = get_category_parents_custom( TUANHOANNAO, true, '' ); ?>
                         <div class="item_box_kienthuc">
@@ -230,7 +230,7 @@ get_header(); ?>
                         </div>
 
                         <?php global $post;
-                        $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => TUANHOANNGOAIVI);
+                        $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => TUANHOANNGOAIVI);
                         $category = get_term(TUANHOANNGOAIVI, 'category');
                         $postslist = get_posts($args); $link_cate = get_category_parents_custom( TUANHOANNGOAIVI, true, '' );
                         $stt = 0; ?>
@@ -273,7 +273,7 @@ get_header(); ?>
 
 
                         <?php global $post;
-                        $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => SOVUADONGMACH);
+                        $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => SOVUADONGMACH);
                         $category = get_term(SOVUADONGMACH, 'category');
                          $postslist = get_posts($args); $link_cate = get_category_parents_custom( SOVUADONGMACH, true, '' );
                         $stt = 0; ?>

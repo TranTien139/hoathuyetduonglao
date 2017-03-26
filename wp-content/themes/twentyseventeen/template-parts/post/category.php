@@ -26,8 +26,11 @@
             $tag = get_term_by('slug', $end, 'post_tag');
 
             if(isset($id_cate) && $id_cate != null){
-                $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => $id_cate->term_id);
-
+                if($end == 'bai-viet-moi-nhat') {
+                    $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date');
+                }else{
+                    $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => $id_cate->term_id);
+                }
             }else{
                 $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date', 'tag_id' => $tag->term_id);
             }
