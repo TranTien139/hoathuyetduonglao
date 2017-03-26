@@ -60,7 +60,7 @@
                             );
                             $my_query = new WP_Query($args); } $relate =0; ?>
 
-    <?php   if( $my_query->have_posts() ) {
+    <?php   if(isset($my_query) && $my_query->have_posts() ) {
         while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
                             <div class="item_relative_news"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></div>
@@ -102,7 +102,7 @@
                             <div class="content_box">
 
 
-                                 <?php $relate =0;   if( $my_query->have_posts() ) {
+                                 <?php $relate =0;   if(isset($my_query) && $my_query->have_posts() ) {
                                         while ($my_query->have_posts()) : $my_query->the_post(); if($relate >2); ?>
                                             <h5 class="item_tinlienquan_detail"><a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a> <span class="txt_666">(<?php  the_date('d-m-Y', '', '');  ?>)</span></h5>
                                             <?php
