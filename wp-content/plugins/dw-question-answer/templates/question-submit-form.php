@@ -9,60 +9,60 @@
 <?php if ( dwqa_current_user_can( 'post_question' ) ) : ?>
 	<?php do_action( 'dwqa_before_question_submit_form' ); ?>
 	<form method="post" class="dwqa-content-edit-form">
-		<p class="dwqa-search">
-			<label for="question_title"><?php _e( 'Title', 'dwqa' ) ?></label>
+		<div class="form-group">
+
 			<?php $title = isset( $_POST['question-title'] ) ? sanitize_title( $_POST['question-title'] ) : ''; ?>
-			<input type="text" data-nonce="<?php echo wp_create_nonce( '_dwqa_filter_nonce' ) ?>" id="question-title" name="question-title" value="<?php echo $title ?>" tabindex="1">
-		</p>
+            <input type="text" data-nonce="<?php echo wp_create_nonce( '_dwqa_filter_nonce' ) ?>" id="question-title" name="question-title" class="form-control" placeholder="Tiêu đề *">
+		</div>
 		<?php $content = isset( $_POST['question-content'] ) ? sanitize_text_field( $_POST['question-content'] ) : ''; ?>
-		<p><?php dwqa_init_tinymce_editor( array( 'content' => $content, 'textarea_name' => 'question-content', 'id' => 'question-content' ) ) ?></p>
+		<div class="form-group"> <textarea  class="form-control input_noidung" name = 'question-content'  id ='question-content'   placeholder="Nội dung"></textarea></div>
 		<?php global $dwqa_general_settings; ?>
 		<?php if ( isset( $dwqa_general_settings['enable-private-question'] ) && $dwqa_general_settings['enable-private-question'] ) : ?>
-		<p>
-			<label for="question-status"><?php _e( 'Status', 'dwqa' ) ?></label>
-			<select class="dwqa-select" id="question-status" name="question-status">
-				<optgroup label="<?php _e( 'Who can see this?', 'dwqa' ) ?>">
-					<option value="publish"><?php _e( 'Public', 'dwqa' ) ?></option>
-					<option value="private"><?php _e( 'Only Me &amp; Admin', 'dwqa' ) ?></option>
-				</optgroup>
-			</select>
-		</p>
 		<?php endif; ?>
-		<p>
-			<label for="question-category"><?php _e( 'Category', 'dwqa' ) ?></label>
-			<?php
-				wp_dropdown_categories( array(
-					'name'          => 'question-category',
-					'id'            => 'question-category',
-					'taxonomy'      => 'dwqa-question_category',
-					'show_option_none' => __( 'Select question category', 'dwqa' ),
-					'hide_empty'    => 0,
-					'quicktags'     => array( 'buttons' => 'strong,em,link,block,del,ins,img,ul,ol,li,code,spell,close' ),
-					'selected'      => isset( $_POST['question-category'] ) ? sanitize_text_field( $_POST['question-category'] ) : false,
-				) );
-			?>
-		</p>
-		<p>
-			<label for="question-tag"><?php _e( 'Tag', 'dwqa' ) ?></label>
+		<div class="form-group">
 			<?php $tags = isset( $_POST['question-tag'] ) ? sanitize_text_field( $_POST['question-tag'] ) : ''; ?>
-			<input type="text" class="" name="question-tag" value="<?php echo $tags ?>" >
-		</p>
+			<input type="text" class="form-control" name="question-tag" placeholder="Thẻ tag" value="<?php echo $tags ?>" >
+		</div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Số điện thoại">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Địa chỉ">
+            </div>
+
 		<?php if ( dwqa_current_user_can( 'post_question' ) && !is_user_logged_in() ) : ?>
-		<p>
-			<label for="_dwqa_anonymous_email"><?php _e( 'Your Email', 'dwqa' ) ?></label>
+		<div class="form-group">
+
 			<?php $email = isset( $_POST['_dwqa_anonymous_email'] ) ? sanitize_email( $_POST['_dwqa_anonymous_email'] ) : ''; ?>
-			<input type="email" class="" name="_dwqa_anonymous_email" value="<?php echo $email ?>" >
-		</p>
-		<p>
-			<label for="_dwqa_anonymous_name"><?php _e( 'Your Name', 'dwqa' ) ?></label>
+			<input type="email" class="form-control" name="_dwqa_anonymous_email" placeholder="Địa chỉ email" value="<?php echo $email ?>" >
+		</div>
+		<div class="form-group">
+
 			<?php $name = isset( $_POST['_dwqa_anonymous_name'] ) ? sanitize_text_field( $_POST['_dwqa_anonymous_name'] ) : ''; ?>
-			<input type="text" class="" name="_dwqa_anonymous_name" value="<?php echo $name ?>" >
-		</p>
+			<input type="text" class="form-control" name="_dwqa_anonymous_name"  placeholder="Số điện thoại"  value="<?php echo $name ?>" >
+		</div>
 		<?php endif; ?>
 		<?php wp_nonce_field( '_dwqa_submit_question' ) ?>
 		<?php dwqa_load_template( 'captcha', 'form' ); ?>
 		<?php do_action('dwqa_before_question_submit_button'); ?>
-		<input type="submit" name="dwqa-question-submit" value="<?php _e( 'Submit', 'dwqa' ) ?>" >
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-tn-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Mã bảo mật">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-tn-6">
+                <div class="form-group">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/graphics/img_capcha.jpg" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-tn-12">
+                <div class="form-group">
+                    <input type="submit" name="dwqa-question-submit" class="btn btn_site" value="<?php _e( 'Submit', 'dwqa' ) ?>" >
+                </div>
+            </div>
+        </div>
 	</form>
 	<?php do_action( 'dwqa_after_question_submit_form' ); ?>
 <?php else : ?>

@@ -28,8 +28,8 @@ get_header(); ?>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 col-tn-12 space_bottom_10">
                         <div id="box_video_noibat" class="space_bottom_20 width_common">
                             <div class="title_box">
-                                <h3><a href="#">Video nổi bật</a></h3>
-                                <div class="icon_title"><img src="images/icon/ico_video.png" alt=""></div>
+                                <h3><a href="">Video nổi bật</a></h3>
+                                <div class="icon_title"><img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/ico_video.png" alt=""></div>
                             </div>
                             <div class="content_box_video width_common">
                                 <div class="list_video_noibat width_common">

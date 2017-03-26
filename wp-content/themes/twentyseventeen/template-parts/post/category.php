@@ -33,7 +33,7 @@
             }
             $postslist_cate = get_posts($args);
               $stt=0; ?>
-            
+
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 col-tn-12">
                 <div class="breadcrumb">
                     <a href="<?php echo esc_url(home_url('/')); ?>">Trang chủ</a> <i class="fa fa-caret-right"></i> <a class="active_breadcrumb"><?php echo $id_cate->name; ?></a>

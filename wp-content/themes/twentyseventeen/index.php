@@ -366,7 +366,7 @@ get_header(); ?>
                                 <h3 class="wap_title_box relative">
                                     <img src="<?php echo get_theme_file_uri(); ?>/assets/images/icon/ico_tuvan.png"
                                          class="icon_title">
-                                    <a class="text_title_box" href="#">tư vấn - chia sẻ</a>
+                                    <a class="text_title_box" href="<?php echo esc_url(home_url('/tu-van-chia-se')) ?>">tư vấn - chia sẻ</a>
                                 </h3>
                             </div>
                             <div class="content_box_common width_common">
@@ -374,6 +374,7 @@ get_header(); ?>
                                     <div class="item_tuvan width_common">
                                         <?php echo do_shortcode('[dwqa-list-questions]'); ?>
                                     </div>
+                                    <div class="block_txt_datcauhoi text-center"><a href="<?php echo esc_url(home_url('/tu-van-chia-se')) ?>" class="text-uppercase txt_16 txt_site"><b>đặt câu hỏi</b></a></div>
                                 </div>
                             </div>
                         </div>

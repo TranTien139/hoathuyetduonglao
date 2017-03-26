@@ -351,6 +351,57 @@ function twentyseventeen_widgets_init() {
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Quản lý địa chỉ', 'twentyseventeen' ),
+        'id'            => 'manage_adress',
+        'description'   => __( 'Quản lý địa chỉ', 'twentyseventeen' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Quản lý bản đồ googlemap', 'twentyseventeen' ),
+        'id'            => 'manage_googlemap',
+        'description'   => __( 'Quản bản đồ googlemap', 'twentyseventeen' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Main googlemap Liên hệ', 'twentyseventeen' ),
+        'id'            => 'main_googlemap',
+        'description'   => __( 'Main googlemap Liên hệ', 'twentyseventeen' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Form gửi liên hệ', 'twentyseventeen' ),
+        'id'            => 'from_contact',
+        'description'   => __( 'Form gửi liên hệ', 'twentyseventeen' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Box đặt câu hỏi FAQ', 'twentyseventeen' ),
+        'id'            => 'form_faq',
+        'description'   => __( 'Box đặt câu hỏi FAQ', 'twentyseventeen' ),
+        'before_widget' => '<section class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
 }
 add_action( 'widgets_init', 'twentyseventeen_widgets_init' );
 
