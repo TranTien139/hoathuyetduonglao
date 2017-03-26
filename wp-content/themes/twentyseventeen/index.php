@@ -182,17 +182,21 @@ get_header(); ?>
                     $link_cate = get_category_parents_custom( KIENTHUCBENHHOC, true, '' ); ?>
                     <div id="box_kienthuc_benhhoc" class="box_common_site">
                         <div class="title_box_common">
+                            <?php if(isset($category)){ ?>
                             <h3 class="wap_title_box relative">
                                 <img src="<?php echo get_theme_file_uri(); ?>/assets/images/icon/ico_sach.png"
                                      class="icon_title">
                                 <a class="text_title_box"
                                    href="<?php echo $link_cate; ?>"><?php echo $category->name; ?></a>
                             </h3>
+                            <?php } ?>
                         </div>
+
+                        <?php $list_cate = getChildCate(KIENTHUCBENHHOC); if(isset($list_cate)){ foreach($list_cate as $item=>$value){  ?>
                         <?php global $post;
-                        $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => TUANHOANNAO);
-                        $category = get_term(TUANHOANNAO, 'category');
-                        $stt = 0;  $link_cate = get_category_parents_custom( TUANHOANNAO, true, '' ); ?>
+                        $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => $value);
+                        $category = get_term($value, 'category');
+                        $stt = 0;  $link_cate = get_category_parents_custom( $value, true, '' ); ?>
                         <div class="item_box_kienthuc">
                             <?php if(count($postslist)>0){ ?>
                             <h2 class="block_text_info_box">
@@ -229,89 +233,7 @@ get_header(); ?>
                             </div>
                         </div>
 
-                        <?php global $post;
-                        $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => TUANHOANNGOAIVI);
-                        $category = get_term(TUANHOANNGOAIVI, 'category');
-                        $postslist = get_posts($args); $link_cate = get_category_parents_custom( TUANHOANNGOAIVI, true, '' );
-                        $stt = 0; ?>
-                        <div class="item_box_kienthuc">
-                            <?php if(count($postslist)>0){ ?>
-                            <h2 class="block_text_info_box">
-                                <a href="<?php echo $link_cate; ?>"><?php echo $category->name; ?></a>
-                            </h2>
-                            <?php } ?>
-                            <div class="content_box_common width_common">
-                                <div class="block_news width_common">
-                                    <div class="block_news width_common">
-
-                                    <?php foreach ($postslist as $post) :
-                                    setup_postdata($post);
-                                    if ($stt == 0){ ?>
-                                        <div class="block_thumb_news">
-                                            <a class="thunb_image thumb_5x3" href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
-                                        </div>
-                                        <h2 class="title_box_news">
-                                            <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-                                        </h2>
-                                        <h4 class="lead_box_news"><?php the_excerpt(); ?></h4>
-                                    </div>
-                                    <div class="list_sub_news width_common dot_list_sub">
-                                        <?php } else { ?>
-                                            <div class="item_sub_news">
-                                                <h2 class="title_box_news">
-                                                    <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-                                                </h2>
-                                            </div>
-                                        <?php }
-                                        $stt++;
-                                        endforeach;
-                                        wp_reset_postdata(); ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <?php global $post;
-                        $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => SOVUADONGMACH);
-                        $category = get_term(SOVUADONGMACH, 'category');
-                         $postslist = get_posts($args); $link_cate = get_category_parents_custom( SOVUADONGMACH, true, '' );
-                        $stt = 0; ?>
-                        <div class="item_box_kienthuc">
-                            <?php if(count($postslist)>0){ ?>
-                            <h2 class="block_text_info_box">
-                                <a href="<?php echo $link_cate; ?>"><?php echo $category->name; ?></a>
-                            </h2>
-                            <?php } ?>
-                            <div class="content_box_common width_common">
-                                <div class="block_news width_common">
-                                    <div class="block_news width_common">
-                                    <?php foreach ($postslist as $post) :
-                                    setup_postdata($post);
-                                    if ($stt == 0){ ?>
-                                        <div class="block_thumb_news">
-                                            <a class="thunb_image thumb_5x3" href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
-                                        </div>
-                                        <h2 class="title_box_news">
-                                            <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-                                        </h2>
-                                        <h4 class="lead_box_news"><?php the_excerpt(); ?></h4>
-                                    </div>
-                                    <div class="list_sub_news width_common dot_list_sub">
-                                        <?php } else { ?>
-                                            <div class="item_sub_news">
-                                                <h2 class="title_box_news">
-                                                    <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-                                                </h2>
-                                            </div>
-                                        <?php }
-                                        $stt++;
-                                        endforeach;
-                                        wp_reset_postdata(); ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       <?php }} ?>
 
                     </div>
                 </div>

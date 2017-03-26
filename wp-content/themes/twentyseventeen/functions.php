@@ -32,6 +32,14 @@ CONST CATE_SIDEBAR4 = 2;
 CONST CATE_SIDEBAR4 = 2;
 
 
+function getChildCate($id_cate){
+    $term_id = $id_cate;
+    $taxonomy_name = 'category';
+    $term_children = get_term_children( $term_id, $taxonomy_name );
+    return $term_children;
+}
+
+
 if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 	return;
