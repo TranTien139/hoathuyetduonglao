@@ -26,10 +26,10 @@ CONST KHOVIDEO = 9;
 CONST SLIDERIGHT = 10;
 
 CONST CATE_SIDEBAR1 = 3;
-CONST CATE_SIDEBAR2 = 3;
-CONST CATE_SIDEBAR3 = 3;
-CONST CATE_SIDEBAR4 = 3;
-CONST CATE_SIDEBAR4 = 5;
+CONST CATE_SIDEBAR2 = 9;
+CONST CATE_SIDEBAR3 = 4;
+CONST CATE_SIDEBAR4 = 2;
+CONST CATE_SIDEBAR4 = 2;
 
 
 if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
@@ -408,6 +408,16 @@ function twentyseventeen_widgets_init() {
         'description'   => __( 'Thanh chuyên mục kho video', 'twentyseventeen' ),
         'before_widget' => '<section class="widget %2$s">',
         'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Footer dưới trang web', 'twentyseventeen' ),
+        'id'            => 'footer',
+        'description'   => __( 'Footer dưới trang web', 'twentyseventeen' ),
+        'before_widget' => '',
+        'after_widget'  => '',
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ) );

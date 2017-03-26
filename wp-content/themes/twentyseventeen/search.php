@@ -34,11 +34,9 @@ global $wp_query;
                         <?php } ?>
                     </div>
 
-
-
-
                     <div class="block_xemthem text-right">
-                        <a href="#" class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
+<?php  //$url = $_SERVER["REQUEST_URI"]; $url= explode('?',$url); $url = $url[1]; $params = explode('/',$url[1]); $params = $params[1]; if($params == null){$params =1;}  ?>
+                        <a href="<?php echo esc_url(home_url('?'.$url)); ?> " class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
                     </div>
                 </div>
             </div>
@@ -53,5 +51,4 @@ global $wp_query;
         </div>
     </div>
 </div>
-
 <?php get_footer(); ?>

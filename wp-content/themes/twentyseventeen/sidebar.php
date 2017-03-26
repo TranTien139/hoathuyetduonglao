@@ -108,7 +108,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
                         <h2 class="title_box_news title_normal">
                             <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
                         </h2>
-
                     </div>
                     <?php
                 endforeach;

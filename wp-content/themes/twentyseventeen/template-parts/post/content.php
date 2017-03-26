@@ -47,8 +47,30 @@
                         </div>
                         <h3 class="lead_detail_page"><?php the_excerpt() ?></h3>
                         <div class="relative_news_detail">
-                            <div class="item_relative_news">Đã đến ngày công an nhận định nạn nhân Cát Tường nổi</div>
-                            <div class="item_relative_news">Đã đến ngày công an nhận định nạn nhân Cát Tường nổi</div>
+                            <?php
+                            //for use in the loop, list 5 post titles related to first tag on current post
+                            $tags = wp_get_post_tags(get_the_ID());
+                            if ($tags) {
+                            $first_tag = $tags[0]->term_id;
+                            $args=array(
+                                'tag__in' => array($first_tag),
+                                'post__not_in' => array($post->ID),
+                                'posts_per_page'=>7,
+                                'caller_get_posts'=>1
+                            );
+                            $my_query = new WP_Query($args); } $relate =0; ?>
+
+    <?php   if( $my_query->have_posts() ) {
+        while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+                            <div class="item_relative_news"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></div>
+            <?php
+            $relate++; if($relate =2) break;
+        endwhile;
+    }
+    wp_reset_query();
+    ?>
+
                         </div>
                         <div class="fck_detail">
                             <?php the_content() ?>
@@ -79,26 +101,15 @@
                             </div>
                             <div class="content_box">
 
-                                <?php
-                                //for use in the loop, list 5 post titles related to first tag on current post
-                                $tags = wp_get_post_tags(get_the_ID());
-                                if ($tags) {
-                                    $first_tag = $tags[0]->term_id;
-                                    $args=array(
-                                        'tag__in' => array($first_tag),
-                                        'post__not_in' => array($post->ID),
-                                        'posts_per_page'=>5,
-                                        'caller_get_posts'=>1
-                                    );
-                                    $my_query = new WP_Query($args);
-                                    if( $my_query->have_posts() ) {
-                                        while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+                                 <?php $relate =0;   if( $my_query->have_posts() ) {
+                                        while ($my_query->have_posts()) : $my_query->the_post(); if($relate >2); ?>
                                             <h5 class="item_tinlienquan_detail"><a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a> <span class="txt_666">(<?php  the_date('d-m-Y', '', '');  ?>)</span></h5>
                                             <?php
+                                            $relate++;
                                         endwhile;
                                     }
                                     wp_reset_query();
-                                }
                                 ?>
 
                             </div>
