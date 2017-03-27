@@ -40,3 +40,16 @@ $(function(){
 	});
 	
 })
+
+$('.four-lines').ellipsis({
+    lines: 4,
+    ellipClass: 'ellip',
+    responsive: true
+});
+
+$('.three-lines').ellipsis({
+    lines: 3,
+    ellipClass: 'ellip',
+    responsive: true
+});
+

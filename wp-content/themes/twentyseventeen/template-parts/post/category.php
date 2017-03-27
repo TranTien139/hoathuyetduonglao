@@ -60,7 +60,7 @@
                 endforeach; ?>
 
                 <?php global $post;
-                $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => TINXEMNHIEU);
+                $args = array('posts_per_page' => 6, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => TINXEMNHIEU);
                 $category = get_term(TINXEMNHIEU, 'category');
                 $category_link = get_category_link(TINXEMNHIEU); $postslist = get_posts($args); ?>
                 <div id="box_tinxemnhieu_folder" class="width_common space_bottom_20">

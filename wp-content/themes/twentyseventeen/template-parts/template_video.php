@@ -4,19 +4,20 @@ Template Name: Kho video
 */
 get_header(); ?>
 
+<?php $OTduplicateArray = array(); ?>
     <div id="wrapper_container">
         <div class="container">
             <div id="video_page">
                 <div class="row">
                     <?php global $post;
-                    $args = array('posts_per_page' => 13, 'order' => 'ASC', 'orderby' => 'title', 'category' => KHOVIDEO);
-                    $postslist = get_posts($args); $stt = 0; ?>
+                    $args = array('posts_per_page' => 1, 'order' => 'DESC', 'orderby' => 'post_date' , 'category' => KHOVIDEO);
+                    $postslist = get_posts($args);  ?>
                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7 col-tn-12 space_bottom_10">
                         <div id="video_hot" class="space_bottom_10">
                             <div class="title_box"><h3><a class="text-uppercase">Kho video</a></h3></div>
                             <div class="content_box">
 <?php foreach ($postslist as $post) :
-    setup_postdata($post);  if($stt ==0){ ?>
+    setup_postdata($post);  $OTduplicateArray[]=get_the_ID();  ?>
                                 <div class="block_videohot width_common">
                                     <div class="block_thumb_video width_common">
                                         <a href="<?php echo the_permalink() ?>"><?php the_post_thumbnail() ?></a>
@@ -26,7 +27,7 @@ get_header(); ?>
                                     </h1>
                                     <div class="cate_video txt_666 width_common space_bottom_10"><a href="" class="txt_site"><?php the_category(', '); ?></a> - <?php echo get_the_date('d/m/Y H:i:s'); ?></div>
                                 </div>
-    <?php } $stt++; if($stt == 1) break; endforeach; wp_reset_postdata(); ?>
+    <?php  endforeach; wp_reset_postdata(); ?>
                             </div>
                         </div>
                     </div>
@@ -36,6 +37,7 @@ get_header(); ?>
                         'posts_per_page' => 5,
                         'meta_key' => 'meta-checkbox',
                         'meta_value' => 'yes',
+                        'post__not_in' => $OTduplicateArray,
                         'category' => KHOVIDEO
                     );
                     $featured = new WP_Query($args); ?>
@@ -48,18 +50,19 @@ get_header(); ?>
                             </div>
                             <div class="content_box_video width_common">
                                 <div class="list_video_noibat width_common">
-<?php   if ($featured->have_posts()): while($featured->have_posts()): $featured->the_post(); ?>
-                                    <div class="item_video_noibat active">
+                                    <?php $stt = 0; ?>
+<?php   if ($featured->have_posts()): while($featured->have_posts()): $featured->the_post(); $OTduplicateArray[]=get_the_ID(); ?>
+                                    <div class="item_video_noibat <?php if($stt==0) echo 'active'; ?> ">
                                         <div class="item_video relative format_video">
                                             <div class="thumb_video relative">
                                                 <div class="thunb_image thumb_5x3"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
                                                 <a href="<?php the_permalink(); ?>" class="masking_video1"> <i class="fa fa-pause" aria-hidden="true"></i></a>
                                                 <a href="<?php the_permalink(); ?>" class="masking_video2"> &nbsp;</a>
                                             </div>
-                                            <h3 class="title_video"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
+                                            <h3 class="title_video"><a href="<?php the_permalink(); ?>" class="four-lines"> <?php the_title(); ?></a></h3>
                                         </div>
                                     </div>
-    <?php  endwhile; else: endif; ?>
+    <?php  $stt++; endwhile; else: endif; ?>
                                 </div>
                                 <div class="width_common block_btn_pagination_video text-center">
                                     <a href="#" class="btn_pagination"><i class="fa fa-caret-up"></i></a> <a href="#" class="btn_pagination"><i class="fa fa-caret-down"></i></a>
@@ -88,8 +91,11 @@ get_header(); ?>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-tn-12 space_bottom_10">
                         <div class="list_video_folder">
-<?php $stt =0; foreach ($postslist as $post) :
-    setup_postdata($post);  if($stt !=0){ ?>
+                            <?php global $post;
+                            $args = array('posts_per_page' => 12, 'order' => 'DESC', 'orderby' => 'post_date' ,'post__not_in' => $OTduplicateArray, 'category' => KHOVIDEO);
+                            $postslist = get_posts($args);  ?>
+<?php  foreach ($postslist as $post) :
+    setup_postdata($post);   ?>
                             <div class="item_video_noibat">
                                 <div class="item_video relative format_video">
                                     <div class="thumb_video relative">
@@ -100,7 +106,7 @@ get_header(); ?>
                                     <h3 class="title_video"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
                                 </div>
                             </div>
-<?php } $stt++; endforeach; wp_reset_postdata(); ?>
+<?php endforeach; wp_reset_postdata(); ?>
                         </div>
                         <div class="block_xemthem text-right">
                             <a href="" class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>

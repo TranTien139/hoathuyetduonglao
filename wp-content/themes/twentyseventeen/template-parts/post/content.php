@@ -94,13 +94,12 @@
                         </div>
 
                         <div id="box_tin_lienquan_detail" class="item_box_col_right space_bottom_10">
-                            <div class="title_box"><h3><a href="#">tin liên quan</a></h3>
+                            <div class="title_box"><h3><a >tin liên quan</a></h3>
                                 <div class="block_xemthem text-right">
-                                    <a href="#" class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
+                                    <a class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
                                 </div>
                             </div>
                             <div class="content_box">
-
 
                                  <?php $relate =0;   if(isset($my_query) && $my_query->have_posts() ) {
                                         while ($my_query->have_posts()) : $my_query->the_post(); if($relate >2); ?>
@@ -139,9 +138,8 @@
         <div class="container">
             <div id="video_page">
                 <div class="row">
-                    <?php global $post;
-                    $args = array('posts_per_page' => 6, 'order' => 'ASC', 'orderby' => 'title', 'category' => KHOVIDEO);
-                    $postslist = get_posts($args); $stt = 0; ?>
+                    <?php $OTduplicateArray = array(); ?>
+
                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7 col-tn-12 space_bottom_10">
                         <div id="video_hot" class="space_bottom_10">
                             <div class="title_box"><h3><a class="text-uppercase">Kho video</a></h3></div>
@@ -149,7 +147,9 @@
 
                                     <div class="block_videohot width_common">
                                         <div class="block_thumb_video width_common">
-                                            <a href="<?php echo the_permalink() ?>"><?php the_content() ?></a>
+                                            <a>
+                                               <?php the_content(); ?>
+                                            </a>
                                         </div>
                                         <h1 class="title_box_video_hot width_common">
                                             <a href="<?php echo the_permalink() ?>"><?php the_title() ?></a>
@@ -162,13 +162,16 @@
                     </div>
 
                     <?php
+                    $OTduplicateArray[] = get_the_ID();
                     $args = array(
                         'posts_per_page' => 5,
                         'meta_key' => 'meta-checkbox',
                         'meta_value' => 'yes',
+                        'post__not_in' => $OTduplicateArray,
                         'category' => KHOVIDEO
                     );
                     $featured = new WP_Query($args); ?>
+
 
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 col-tn-12 space_bottom_10">
                         <div id="box_video_noibat" class="space_bottom_20 width_common">
@@ -178,7 +181,7 @@
                             </div>
                             <div class="content_box_video width_common">
                                 <div class="list_video_noibat width_common">
-                                    <?php   if ($featured->have_posts()): while($featured->have_posts()): $featured->the_post(); ?>
+                                    <?php   if ($featured->have_posts()): while($featured->have_posts()): $featured->the_post(); $OTduplicateArray[] = get_the_ID(); ?>
                                         <div class="item_video_noibat active">
                                             <div class="item_video relative format_video">
                                                 <div class="thumb_video relative">
@@ -211,6 +214,10 @@
                     <div class="content_box_video width_common">
                         <div class="flexslider">
                             <ul class="slides">
+                                <?php global $post;
+                                $args = array('posts_per_page' => 6, 'order' => 'DESC', 'orderby' => 'post_date', 'post__not_in' => $OTduplicateArray, 'category' => KHOVIDEO);
+                                $postslist = get_posts($args); $stt = 0; ?>
+
                                 <?php foreach ($postslist as $post) :
                                 setup_postdata($post);  ?>
                                 <li>

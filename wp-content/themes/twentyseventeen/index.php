@@ -98,7 +98,7 @@ get_header(); ?>
                                         <a class="thunb_image thumb_5x3" href="<?php echo get_permalink() ?>"><?php the_post_thumbnail() ?></a>
                                     </div>
                                     <h2 class="title_box_news">
-                                        <a href="<?php echo get_permalink() ?>"><?php the_title() ?></a>
+                                        <a href="<?php echo get_permalink() ?>" class="four-lines"><?php the_title() ?></a>
                                     </h2>
                                 </div>
                             <?php }
@@ -239,7 +239,7 @@ get_header(); ?>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-tn-12">
                     <?php global $post;
-                    $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => SUCKHOELAMDEP);
+                    $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => SUCKHOELAMDEP);
                     $category = get_term(SUCKHOELAMDEP, 'category');
                     $category_link = get_category_link(SUCKHOELAMDEP); $postslist = get_posts($args);
                     $stt = 0;  ?>
@@ -309,7 +309,7 @@ get_header(); ?>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-tn-12">
                         <div id="box_video" class="width_common space_bottom_20">
                             <?php global $post;
-                            $args = array('posts_per_page' => 6, 'order' => 'ASC', 'orderby' => 'title', 'category' => KHOVIDEO);
+                            $args = array('posts_per_page' => 6, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => KHOVIDEO);
                             $category = get_term(KHOVIDEO, 'category');
                             $category_link = get_category_link(KHOVIDEO); $postslist = get_posts($args);  if(count($postslist)>0){ ?>
                             <div class="title_box_video width_common">
@@ -332,7 +332,7 @@ get_header(); ?>
                                                         <a href="<?php the_permalink() ?>" class="masking_video1"> &nbsp;</a>
                                                         <a href="<?php the_permalink() ?>" class="masking_video2"> &nbsp;</a>
                                                     </div>
-                                                    <h2 class="title_video"><a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                                                    <h2 class="title_video"><a href="<?php the_permalink() ?>" class="three-lines"><?php the_title() ?></a>
                                                     </h2>
                                                 </div>
                                             </li>
