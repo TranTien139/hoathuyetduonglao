@@ -420,6 +420,16 @@ function twentyseventeen_widgets_init() {
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ) );
+	
+	register_sidebar( array(
+        'name'          => __( 'Tin xem nhieu nhat', 'twentyseventeen' ),
+        'id'            => 'most-view',
+        'description'   => __( 'Tin xem nhieu nhat', 'twentyseventeen' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
 
 }
 add_action( 'widgets_init', 'twentyseventeen_widgets_init' );
