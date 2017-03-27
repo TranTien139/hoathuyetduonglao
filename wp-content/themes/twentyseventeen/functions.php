@@ -689,3 +689,44 @@ function sm_meta_save( $post_id ) {
 
 }
 add_action( 'save_post', 'sm_meta_save' );
+
+
+
+// most view
+
+function getPostViews($postID){ // hàm này dùng để lấy số người đã xem qua bài viết
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){ // Nếu như lượt xem không có
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0"; // giá trị trả về bằng 0
+    }
+    return $count; // Trả về giá trị lượt xem
+}
+function setPostViews($postID) {// hàm này dùng để set và update số lượt người xem bài viết.
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++; // cộng đồn view
+        update_post_meta($postID, $count_key, $count); // update count
+    }
+}
+
+function subh_posts_column_views( $defaults ) {
+    $defaults['post_views'] = __( 'Views' );
+    return $defaults;
+}
+
+function subh_posts_custom_column_views( $column_name, $id ) {
+    if ( $column_name === 'post_views' ) {
+        echo getPostViews( get_the_ID() );
+    }
+}
+
+add_filter( 'manage_posts_columns', 'subh_posts_column_views' );
+add_action( 'manage_posts_custom_column', 'subh_posts_custom_column_views', 5, 2 );

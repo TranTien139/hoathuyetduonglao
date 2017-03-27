@@ -28,6 +28,15 @@
             if(isset($id_cate) && $id_cate != null){
                 if($end == 'bai-viet-moi-nhat') {
                     $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date','paged'=>$paged);
+                }else if($end == 'tin-xem-nhieu') {
+                    $args = array(
+                        'numberposts' => 11,  /* get 4 posts, or set -1 to display all posts */
+                        'orderby' => 'meta_value',  /* this will look at the meta_key you set below */
+                        'meta_key' => 'post_views_count',
+                        'order' => 'DESC',
+                        'post_type' => 'post',
+                        'post_status' => 'publish'
+                    );
                 }else{
                     $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date','paged'=>$paged , 'category' => $id_cate->term_id);
                 }

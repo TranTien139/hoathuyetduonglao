@@ -24,7 +24,7 @@ get_header(); ?>
                     <div class="title_box"><h3><a href="<?php echo get_site_url() ?>/category/bai-viet-moi-nhat">Bài viết mới nhất</a></h3></div>
                     <div class="content_box">
                         <div class="block_news width_common">
-                            <?php $the_query = new WP_Query('posts_per_page=3');
+                            <?php $the_query = new WP_Query( array( 'category__not_in' => SLIDERIGHT, 'posts_per_page' => 3 ) );
                             $stt = 0; ?>
                             <?php if (have_posts()):while ($the_query->have_posts()) :
                             $the_query->the_post();
@@ -66,14 +66,19 @@ get_header(); ?>
                 </div>
 
                 <?php global $post;
-                $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => TINXEMNHIEU);
-                $category = get_term(TINXEMNHIEU, 'category');
-                $category_link = get_category_link(TINXEMNHIEU); $postslist = get_posts($args);
+                $args    = array(
+                    'numberposts' => 3,  /* get 4 posts, or set -1 to display all posts */
+                    'orderby'     => 'meta_value',  /* this will look at the meta_key you set below */
+                    'meta_key'    => 'post_views_count',
+                    'order'       => 'DESC',
+                    'post_type'   => 'post',
+                    'post_status' => 'publish'
+                );
+                $postslist = get_posts( $args );
                 $stt = 0; ?>
                 <div id="box_tinxemnhieu" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-tn-12 space_bottom_10">
-                    <?php if(count($postslist)>0){  ?> <div class="title_box"><h3><a
-                                    href="<?php echo esc_url($category_link); ?>"><?php echo $category->name ?></a>
-                        </h3></div> <?php } ?>
+                   <div class="title_box"><h3><a href="<?php echo get_site_url() ?>/category/tin-xem-nhieu" >Tin Xem Nhiều</a>
+                        </h3></div>
                     <div class="content_box">
                         <div class="block_news width_common">
 
@@ -108,7 +113,7 @@ get_header(); ?>
                         </div>
 
                         <div class="block_xemthem text-center">
-                            <a href="<?php echo esc_url($category_link); ?>" class="txt_666"><i
+                            <a href="<?php echo get_site_url() ?>/category/tin-xem-nhieu" class="txt_666"><i
                                         class="fa fa-caret-down"></i> Xem thêm</a>
                         </div>
                     </div>
@@ -196,7 +201,9 @@ get_header(); ?>
                         <?php global $post;
                         $args = array('posts_per_page' => 3, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => $value);
                         $category = get_term($value, 'category');
-                        $stt = 0;  $link_cate = get_category_parents_custom( $value, true, '' ); ?>
+                        $stt = 0;  $link_cate = get_category_parents_custom( $value, true, '' );
+                        $postslist = get_posts($args);
+                        ?>
                         <div class="item_box_kienthuc">
                             <?php if(count($postslist)>0){ ?>
                             <h2 class="block_text_info_box">

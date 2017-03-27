@@ -2,132 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78b34aa-2b19-46b1-8697-dee126f1f528" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/1409667682.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/1409667682.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/1973124360.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/1973124360.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/1994189749.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/1994189749.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/410348353.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/410348353.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/750760668.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/750760668.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/03/img-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/03/img-150x150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/03/img-300x300.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/03/img-768x768.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/03/img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/1227085644.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/1227085644.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/1942606330.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/wpcf7_captcha/1942606330.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/css/admin-style.css" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/css/admin-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/css/email-template-editor.css" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/css/email-template-editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/css/tinymce.css" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/css/tinymce.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/js/admin-pointer-helper.js" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/js/admin-pointer-helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/js/admin-settings-page.js" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/js/admin-settings-page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/js/code-edit-button.js" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/js/code-edit-button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/js/prettify.js" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/js/prettify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/less/mixins.less" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/less/variables.less" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/assets/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/dw-question-answer.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/dw-question-answer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/dwqa-dummy-data.xml" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/dwqa-dummy-data.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Admin/Extensions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Admin/Extensions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Admin/Welcome.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Admin/Welcome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Ajax.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Ajax.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Answer_List_Table.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Answer_List_Table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Editor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Filter.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Filter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Handle.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Handle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Helptab.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Helptab.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Metaboxes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Metaboxes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Notifications.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Notifications.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Permission.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Permission.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/PointerHelper.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/PointerHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Posts/Answer.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Posts/Answer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Posts/Base.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Posts/Base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Posts/Comment.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Posts/Comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Posts/Question.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Posts/Question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Rewrite.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Rewrite.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Session.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Settings.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Settings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Shortcode.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Shortcode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Status.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Status.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Template.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Updater.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Updater.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/User.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Walker/Category.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Walker/Category.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Walker/Tag.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/Walker/Tag.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/autoload.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/deprecated.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/deprecated.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/helper/functions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/helper/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/helper/plugin-compatibility.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/helper/plugin-compatibility.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/helper/theme-compatibility.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/helper/theme-compatibility.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/widgets/Closed_Question.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/widgets/Closed_Question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/widgets/Latest_Question.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/widgets/Latest_Question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/widgets/Popular_Question.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/widgets/Popular_Question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/widgets/Related_Question.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/inc/widgets/Related_Question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-ar.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-ar.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-ca.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-ca.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-cs_CZ.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-cs_CZ.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-de_DE.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-de_DE.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-es_ES.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-es_ES.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-fa_IR.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-fa_IR.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-fr_FR.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-fr_FR.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-he_IL.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-he_IL.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-hi_IN.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-hi_IN.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-hr.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-hr.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-id_ID.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-id_ID.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-it_IT.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-it_IT.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-ko_KR.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-ko_KR.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-nb_NO.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-nb_NO.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-nl_NL.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-nl_NL.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-pl_PL.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-pl_PL.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-pt_BR.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-pt_BR.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-ro_RO.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-ro_RO.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-ru_RU.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-ru_RU.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-sk_SK.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-sk_SK.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-sv_SE.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-sv_SE.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-th.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-th.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-th_TH.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-th_TH.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-tr_TR.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-tr_TR.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-vi.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-vi.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-zh_CN.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-zh_CN.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-zh_TW.po" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa-zh_TW.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa.pot" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/languages/dwqa.pot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/easy-digital-downloads/EDD_SL_Plugin_Updater.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/recaptcha-php/LICENSE" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/recaptcha-php/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/recaptcha-php/README" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/recaptcha-php/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/recaptcha-php/example-captcha.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/recaptcha-php/example-captcha.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/recaptcha-php/example-mailhide.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/recaptcha-php/example-mailhide.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/recaptcha-php/recaptchalib.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/lib/recaptcha-php/recaptchalib.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/readme.md" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/readme.txt" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/answer-submit-form.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/answer-submit-form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/answers.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/answers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/archive-question-filter.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/archive-question-filter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/archive-question.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/archive-question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/css/editor-style.css" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/css/editor-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/css/rtl.css" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/css/rtl.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/css/style.css" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/js/dwqa-questions-list.js" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/js/dwqa-questions-list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/js/dwqa-single-question.js" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/js/dwqa-single-question.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/js/dwqa-submit-question.js" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/assets/js/dwqa-submit-question.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/captcha-form.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/captcha-form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/comments.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-comment.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-edit.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-none.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-none.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-question.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-single-answer.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-single-answer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-single-question.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-single-question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-answer-followers.html" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-answer-followers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-answer.html" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-answer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-answer-followers.html" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-answer-followers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-answer.html" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-answer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-question-followers.html" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-question-followers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-question.html" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-question.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-question.html" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-question.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/question-submit-form.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/question-submit-form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/single-question.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/single-question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/upgrades/upgrades.php" afterPath="$PROJECT_DIR$/wp-content/plugins/dw-question-answer/upgrades/upgrades.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/search.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/sidebar.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_video.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_video.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -142,21 +30,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/page.php">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="2198">
+              <caret line="728" column="1" lean-forward="true" selection-start-line="728" selection-start-column="1" selection-end-line="728" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template_video.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_video.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="93" column="28" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="96" selection-end-column="62" />
+            <state relative-caret-position="204">
+              <caret line="26" column="123" lean-forward="false" selection-start-line="26" selection-start-column="123" selection-end-line="26" selection-end-column="123" />
               <folding />
             </state>
           </provider>
@@ -170,6 +58,8 @@
       <find>dwqa-search</find>
       <find>dwqa-questions-list</find>
       <find>wp_head</find>
+      <find>ul</find>
+      <find>tien</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,13 +90,13 @@
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/css/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/common.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/sidebar.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/search.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_video.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" />
       </list>
     </option>
   </component>
@@ -238,6 +128,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -345,25 +236,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twentyseventeen" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template-parts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="post" />
+              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,17 +339,18 @@
       <workItem from="1490533504296" duration="3548000" />
       <workItem from="1490592220434" duration="2905000" />
       <workItem from="1490618064820" duration="5430000" />
+      <workItem from="1490630575325" duration="6486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102812000" />
+    <option name="totallyTimeSpent" value="109298000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21071953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2665198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -520,7 +399,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php</url>
-          <line>74</line>
+          <line>79</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -528,63 +407,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-answer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-answer-followers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-comment-question-followers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/email/new-question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/content-none.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/dw-question-answer/templates/archive-question-filter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content-video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content-none.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -654,7 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -819,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
           <caret line="110" column="16" lean-forward="false" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,14 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="311" column="108" lean-forward="false" selection-start-line="311" selection-start-column="108" selection-end-line="311" selection-end-column="108" />
           <folding />
         </state>
       </provider>
@@ -855,26 +666,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_chuyenmuc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
-          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -895,10 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_video.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="60" />
+        <state relative-caret-position="1496">
+          <caret line="100" column="59" lean-forward="true" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -911,10 +706,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/template_video.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/post-views-counter/post-views-counter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="93" column="28" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="96" selection-end-column="62" />
+        <state relative-caret-position="-4743">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1490622652974" expanded="true" signature="6678:7068" ph="CREATE TABLE... IF" />
+            <marker date="1490622652974" expanded="true" signature="7833:7885" ph="DROP TABLE I... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/post-views-counter/includes/columns.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="19" column="75" lean-forward="false" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="75" />
+          <folding>
+            <marker date="1490622652942" expanded="true" signature="3854:3970" ph="INSERT INTO ${$wpdb-&gt;prefix}post_views... " />
+            <marker date="1490622652942" expanded="true" signature="3971:3988" ph="UPDATE count... " />
+            <marker date="1490622652942" expanded="true" signature="8511:8633" ph="INSERT INTO ${$wpdb-&gt;prefix}post_views... " />
+            <marker date="1490622652942" expanded="true" signature="8634:8651" ph="UPDATE count... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/post-views-counter/includes/crawler-detect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="168" column="18" lean-forward="false" selection-start-line="168" selection-start-column="16" selection-end-line="168" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/post-views-counter/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/post-views-counter/includes/counter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="573" column="27" lean-forward="false" selection-start-line="573" selection-start-column="25" selection-end-line="573" selection-end-column="27" />
+          <folding>
+            <marker date="1490622652942" expanded="true" signature="14951:15069" ph="INSERT INTO ${$wpdb-&gt;prefix}post_views... " />
+            <marker date="1490622652942" expanded="true" signature="15070:15095" ph="UPDATE count... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/post-views-counter/includes/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1542">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1490622652958" expanded="true" signature="2117:2527" ph="..." />
+            <marker date="1490622652958" expanded="true" signature="3475:3541" ph="ALTER TABLE `${$wpdb-&gt;prefix}post_views`... " />
+            <marker date="1490622652958" expanded="true" signature="3838:3969" ph="ALTER TABLE `${$wpdb-&gt;prefix}post_views`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/post-views-counter/includes/widgets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3058">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1490622652958" expanded="true" signature="2557:2917" ph="..." />
+            <marker date="1490622652958" expanded="true" signature="2922:2998" ph="..." />
+            <marker date="1490622652958" expanded="true" signature="3693:4124" ph="..." />
+            <marker date="1490622652958" expanded="true" signature="4129:4566" ph="..." />
+            <marker date="1490622652958" expanded="true" signature="4571:4787" ph="..." />
+            <marker date="1490622652958" expanded="true" signature="5088:6336" ph="..." />
+            <marker date="1490622652958" expanded="true" signature="6436:6688" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/post-views-counter/includes/frontend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="136" column="18" lean-forward="false" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="71" column="63" lean-forward="false" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2198">
+          <caret line="728" column="1" lean-forward="true" selection-start-line="728" selection-start-column="1" selection-end-line="728" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="123" lean-forward="false" selection-start-line="26" selection-start-column="123" selection-end-line="26" selection-end-column="123" />
           <folding />
         </state>
       </provider>
