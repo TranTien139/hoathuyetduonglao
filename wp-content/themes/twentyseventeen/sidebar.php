@@ -15,6 +15,12 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
+<?php CONST CATE_SIDEBAR1 = 3;
+CONST CATE_SIDEBAR2 = 9;
+CONST CATE_SIDEBAR3 = 4;
+CONST CATE_SIDEBAR4 = 2;
+CONST CATE_SIDEBAR4 = 2; ?>
+
 <div class="item_box_col_right space_bottom_10">
     <?php global $post;
     $args = array('posts_per_page' => 3, 'order' => 'ASC', 'orderby' => 'title', 'category' => CATE_SIDEBAR1);

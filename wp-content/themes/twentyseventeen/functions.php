@@ -23,13 +23,6 @@ CONST KIENTHUCBENHHOC = 5;
 CONST KHOVIDEO = 9;
 CONST SLIDERIGHT = 10;
 
-CONST CATE_SIDEBAR1 = 3;
-CONST CATE_SIDEBAR2 = 9;
-CONST CATE_SIDEBAR3 = 4;
-CONST CATE_SIDEBAR4 = 2;
-CONST CATE_SIDEBAR4 = 2;
-
-
 function getChildCate($id_cate){
     $term_id = $id_cate;
     $taxonomy_name = 'category';

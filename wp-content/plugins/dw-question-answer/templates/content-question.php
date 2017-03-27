@@ -7,28 +7,40 @@
  */
 
 ?>
+<?php
+global $post;
+$user_id = get_post_field('post_author', get_the_ID()) ? get_post_field('post_author', get_the_ID()) : false;
 
+$time = human_time_diff(get_post_time('U', true));
+$text = __('asked', 'dwqa');
+
+$latest_answer = get_comments([
+    'post_id' => get_the_ID()]);
+
+?>
 <div class="item_tuvan width_common">
-    <div class="user_tuvan"><i class="fa fa-question-circle-o" aria-hidden="true"></i> <strong class="txt_666"><?php echo get_the_author(); ?></strong> - <?php echo get_the_term_list( get_the_ID(), 'dwqa-question_category',__( '', 'dwqa' ), ', ', '' ); ?></div>
+    <div class="user_tuvan"><i class="fa fa-question-circle-o" aria-hidden="true"></i> <strong
+                class="txt_666"><?php echo dwqa_the_author(''); ?></strong> - <span
+                class="txt_aaa"><?php the_title(); ?></span></div>
     <div class="block_question">
-        <?php the_title(); ?>
+        <?php the_content(); ?>
+    </div>
+    <?php if (!empty($latest_answer)) : ?>
         <?php
-        global $post;
-        $user_id = get_post_field( 'post_author', get_the_ID() ) ? get_post_field( 'post_author', get_the_ID() ) : false;
-        $args = array(
-            'number' => '1',
-            'post_id' => get_the_ID()
-        );
-        $comments = get_comments($args);
-        ?>
-    </div>
-    <?php if($comments[0]->comment_content != ''){ ?>
-    <div class="block_answear">
-        <i class="fa fa-caret-up"></i>
-        <i><?php echo $comments[0]->comment_content; ?></i> <a href="#" class="txt_999">Xem đầy đủ</a>
-        <div class="author_answear" style="text-transform: uppercase;"><?php echo $comments[0]->comment_author; ?></div>
-    </div>
-    <?php } ?>
-</div>
+        $i = 1;
+        foreach ($latest_answer as $item) :?>
+            <div class="block_answear">
+                <i class="fa fa-caret-up"></i>
+                <i> <?php echo($item->comment_content) ?> </i>
 
+                <?php
+                $author = get_the_author_meta('nickname' , 1);
+                ?>
+                <div class="author_answear"><?php echo($author) ?></div>
+            </div>
+            <?php
+            if ($i == 1) break;
+        endforeach; ?>
+    <?php endif; ?>
+</div>
 

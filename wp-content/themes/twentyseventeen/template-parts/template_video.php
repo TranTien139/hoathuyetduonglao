@@ -92,8 +92,10 @@ get_header(); ?>
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-tn-12 space_bottom_10">
                         <div class="list_video_folder">
                             <?php global $post;
-                            $args = array('posts_per_page' => 12, 'order' => 'DESC', 'orderby' => 'post_date' ,'post__not_in' => $OTduplicateArray, 'category' => KHOVIDEO);
+                            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                            $args = array('posts_per_page' => 12, 'order' => 'DESC', 'orderby' => 'post_date' ,'post__not_in' => $OTduplicateArray,'paged'=> $paged, 'category' => KHOVIDEO);
                             $postslist = get_posts($args);  ?>
+
 <?php  foreach ($postslist as $post) :
     setup_postdata($post);   ?>
                             <div class="item_video_noibat">
@@ -108,9 +110,15 @@ get_header(); ?>
                             </div>
 <?php endforeach; wp_reset_postdata(); ?>
                         </div>
+
+                        <?php
+                        $current_url = get_permalink();
+                        $paged = $paged+1; ?>
+                        <?php if(count($postslist)>=12){ ?>
                         <div class="block_xemthem text-right">
-                            <a href="" class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
+                            <a href="<?php echo $current_url.'?paged='.$paged; ?>" class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
                         </div>
+    <?php } ?>
                     </div>
 
                 </div>
@@ -119,6 +127,5 @@ get_header(); ?>
 
         </div>
     </div>
-
 
 <?php get_footer(); ?>

@@ -34,10 +34,15 @@ global $wp_query;
                         <?php } ?>
                     </div>
 
+                    <?php $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                    global $wp;
+                    $current_url = add_query_arg( $_SERVER['QUERY_STRING'], '', home_url( $wp->request ) );
+                    ?>
+                    <?php if($wp_query->found_posts -($paged)*10 > 0){ ?>
                     <div class="block_xemthem text-right">
-<?php  //$url = $_SERVER["REQUEST_URI"]; $url= explode('?',$url); $url = $url[1]; $params = explode('/',$url[1]); $params = $params[1]; if($params == null){$params =1;}  ?>
-                        <a href="<?php echo esc_url(home_url('?'.$url)); ?> " class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
+                        <a href="<?php echo $current_url.'&paged='.($paged+1); ?> " class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
                     </div>
+                    <?php } ?>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-tn-12 space_bottom_10">

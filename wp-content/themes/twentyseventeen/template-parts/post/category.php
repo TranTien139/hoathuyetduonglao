@@ -24,15 +24,15 @@
             $end = end($end);
             $id_cate = get_category_by_slug($end);
             $tag = get_term_by('slug', $end, 'post_tag');
-
+            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             if(isset($id_cate) && $id_cate != null){
                 if($end == 'bai-viet-moi-nhat') {
-                    $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date');
+                    $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date','paged'=>$paged);
                 }else{
-                    $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date', 'category' => $id_cate->term_id);
+                    $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date','paged'=>$paged , 'category' => $id_cate->term_id);
                 }
             }else{
-                $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date', 'tag_id' => $tag->term_id);
+                $args = array('posts_per_page' => 11, 'order' => 'DESC', 'orderby' => 'post_date','paged'=>$paged ,'tag_id' => $tag->term_id);
             }
             $postslist_cate = get_posts($args);
               $stt=0; ?>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-                    <?php } $stt++;
+                    <?php } $stt++; if($stt ==1) break;
                 endforeach; ?>
 
                 <?php global $post;
@@ -109,6 +109,17 @@
                         endforeach;
                         wp_reset_postdata(); ?>
                     </div>
+
+                    <?php $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                    global $wp;
+                    $current_url = add_query_arg( $_SERVER['QUERY_STRING'], '', home_url( $wp->request ) );
+                    ?>
+
+                    <?php if(count($postslist_cate) >= 11){ ?>
+                    <div class="block_xemthem text-right">
+                        <a href="<?php echo $current_url.'&paged='.($paged+1);  ?>" class="txt_666"><i class="fa fa-caret-down"></i> Xem thêm</a>
+                    </div>
+                    <?php } ?>
 
                 </div>
             </div>

@@ -35,7 +35,7 @@
 				<option value="private"><?php _e( 'Only Me &amp; Admin', 'dwqa' ) ?></option>
 			</optgroup>
 		</select>
-
+		
 		<input type="submit" name="submit-answer" class="dwqa-btn dwqa-btn-primary" value="<?php _e( 'Submit', 'dwqa' ) ?>">
 		<input type="hidden" name="question_id" value="<?php the_ID(); ?>">
 		<input type="hidden" name="dwqa-action" value="add-answer">
